@@ -25,7 +25,9 @@ todo
 
 Put the all downloaded datasets in ./data/ directory.
 
-[Human3.6](http://vision.imar.ro/human3.6m/description.php) can be downloaded from [here](http://vision.imar.ro/human3.6m/description.php). Please follow [the license of the dataset](http://vision.imar.ro/human3.6m/eula.php)
+[Human3.6](http://vision.imar.ro/human3.6m/description.php) can be downloaded from [here](https://drive.google.com/file/d/15OAOUrva1S-C_BV8UgPORcwmWG2ul4Rk/view?usp=share_link). Please follow [the license of the dataset](http://vision.imar.ro/human3.6m/eula.php).
+
+ ([Original stanford link](http://www.cs.stanford.edu/people/ashesh/h3.6m.zip) has crashed, this link is a backup from [siMLPe](https://github.com/dulucas/siMLPe)).
 
 Directory structure:
 ```shell script
