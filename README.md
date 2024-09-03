@@ -5,7 +5,7 @@
 ### Network Architecture
 ---
 
-todo
+![pipeline](./asset/pipeline.png)
 
 ### Dependencies
 ---
@@ -63,6 +63,7 @@ data
 ```
 
 ### Training
+---
 
 #### H3.6M
 
@@ -70,7 +71,20 @@ data
 python main_h36m_3d.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 66 --n_layer 2 --num_stage 12 --drop_out 0.2 --alpha 0.2 --lamda 1.0
 ```
 
+#### CMU mocap
+
+```shell script
+python main_cmu_3d.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 75 --n_layer 2 --num_stage 10 --drop_out 0.2 --alpha 0.4 --lamda 1.0
+```
+
+#### 3DPW
+
+```shell script
+python main_3dpw_3d.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 69 --n_layer 2 --num_stage 8 --drop_out 0.5 --alpha 0.2 --lamda 1.0
+```
+
 ### Testing
+---
 
 #### H3.6M
 
@@ -78,6 +92,18 @@ python main_h36m_3d.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 10 --
 python main_h36m_3d_eval.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 25 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 66 --num_stage 12 --n_layer 2 --lamda 1 --alpha 0.2 --drop_out 0.2 --is_eval --ckpt ./checkpoint/main_h36m_3d_in50_out10_ks10_st12_layer2_a0.2_b1.0/
 ```
 
+#### CMU mocap
+
+```shell script
+python main_cmu_3d_eval.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 25 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 75 --num_stage 10 --n_layer 2 --lamda 1 --alpha 0.4 --drop_out 0.2 --is_eval --ckpt ./checkpoint/main_cmu_3d_in50_out10_ks10_st10_layer2_a0.4_b1.0/
+```
+
+#### 3DPW
+
+```shell script
+python main_3dpw_3d_eval.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 30 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 69 --num_stage 8 --n_layer 2 --lamda 1 --alpha 0.2 --drop_out 0.5 --is_eval --ckpt ./checkpoint/main_3dpw_3d_in50_out10_ks10_st8_layer2_a0.2_b1.0/
+
 ### Acknowledgments
+---
 
 The overall code framework (dataloading, training, testing etc.) is adapted from [HisRepItself](https://github.com/wei-mao-2019/HisRepItself)
