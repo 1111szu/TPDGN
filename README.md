@@ -108,3 +108,19 @@ python main_3dpw_3d_eval.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 
 ---
 
 The overall code framework (dataloading, training, testing etc.) is adapted from [HisRepItself](https://github.com/wei-mao-2019/HisRepItself)
+
+### Citation
+
+If you find this project useful in your research, please consider cite:
+
+```bibtex
+@article{zhong2024tacking,
+  title={Tacking over-smoothing: Target-guide progressive dynamic graph learning for 3D skeleton-based human motion prediction},
+  author={Zhong, Jianqi and Huang, Jiang and Cao, Wenming},
+  journal={Expert Systems with Applications},
+  volume={256},
+  pages={124914},
+  year={2024},
+  publisher={Elsevier}
+}
+```
