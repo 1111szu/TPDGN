@@ -102,6 +102,7 @@ python main_cmu_3d_eval.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 2
 
 ```shell script
 python main_3dpw_3d_eval.py --kernel_size 10 --dct_n 20 --input_n 50 --output_n 30 --skip_rate 1 --batch_size 32 --test_batch_size 32 --in_features 69 --num_stage 8 --n_layer 2 --lamda 1 --alpha 0.2 --drop_out 0.5 --is_eval --ckpt ./checkpoint/main_3dpw_3d_in50_out10_ks10_st8_layer2_a0.2_b1.0/
+```
 
 ### Acknowledgments
 ---
